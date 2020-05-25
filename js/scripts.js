@@ -57,7 +57,7 @@ function render() {
 
 async function fetchPeoples() {
   const res = await fetch(
-    'https://randomuser.me/api/?seed=javascript&results=100&nat=BR&noinfo'
+    'https://randomuser.me/api/?seed=javascript&results=300&nat=BR&noinfo'
   );
   const json = await res.json();
 
