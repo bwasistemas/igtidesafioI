@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Pesquisa de Usuários</title>
+  </head>
+  <body>
+    <h1>Pesquisa de Usuários</h1>
+    <div class="input-field col s6">
+      <form>
+        <div id="divCarregando" class="progresso">
+          <p>Aguarde...</p>
+        </div>
+
+        <input
+          placeholder="Busca"
+          id="inputSearch"
+          type="text"
+          class="validate"
+        />
+      </form>
+
+      <button id="btnSearch" class="waves-effect waves-light btn-small">
+        Buscar
+      </button>
+    </div>
+
+    <div class="search-result-container">
+      <div class="people-list">
+        <h5 id="resultPeople">Nenhum usuário encontrado</h5>
+        <div id="tabPeoples"></div>
+      </div>
+
+      <div class="statistcs-list">
+        <h5 id="statisticsResult">
+          Nada a ser exibido <span id="countFavorites"></span>
+        </h5>
+      </div>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
